@@ -21,3 +21,8 @@ Actor: Codex. Driving review: controls move/steer and pause correctly, but fixed
 
 ## RACE-005 — 2026-11-05T04:06:29.192Z
 Actor: Codex; reference RACE-004. Added HTML turnRadius and speed-proportional steering, bumped race-2. Courtyard actual browser2-lap completion passed at20.2s; start/pause/resume and combined inputs passed. All6 tests pass, including driven simulation on all3 tracks. Initial command from parent directory could not resolve linkedom; reran within app. Orchard170 radius failed controller test,110 passed and is now authored in HTML. Read-before-response preview correction prevents missing-file crash. Exact source hashes refreshed before publication. Remaining device/checkpoint/performance review explicit in REVIEW.md.
+
+## LIVE-REVIEW-20261105 — 2026-11-05T13:39:22.217Z
+Actor: Codex. Plan before documentation: record actual disposable live preview, owner/public source readback and observed browser tasks, retain pending native browser-account/private-app acceptance, and reconcile hashes/diff before publishing documentation. No runtime permission or data change in this batch. Source: approved execution/live fixture and user auth clarification. Affected README.md, REVIEW.md, audit closure.
+
+Result: documented the verified fictional live review and remaining boundaries without claiming authenticated application acceptance. Separate isolated capability fixtures passed valid200, invalid422, missing428, stale412, concurrent200+412, selector206 and denied reads; those fixture results are not inherited by this app. Temporary fixture PUT access was closed with explicit Deny controls and anonymous401 readback. No credential included. Code and installed records unchanged by this documentation batch.

@@ -1,5 +1,5 @@
 {
-  "utc": "2026-11-05T04:12:05.509Z",
+  "utc": "2026-11-05T13:39:28.199Z",
   "actor": "Codex",
   "repo": "pagelove/racing-template",
   "scope": "Candidate source closure; audit files excluded to avoid recursive receipts",
@@ -37,13 +37,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 994,
-      "sha256": "e7698b2386c9bf9f0dcf4f8f298e37c5ea5660e3e82941470b55f5e53973da30"
+      "bytes": 2066,
+      "sha256": "7e95f4945436228076ce90d15b4f37eae1df0a5008c604975a3fd8cf03072d4e"
     },
     {
       "path": "REVIEW.md",
-      "bytes": 1287,
-      "sha256": "281fcf4a19f5c425e04dc37f7380d3fa6288ebf62b0cea55a573c9f5620ac7bc"
+      "bytes": 2359,
+      "sha256": "203a9fa115b064effc6fefeb336b6205904f827559a9bdc5aa9b3718ec976bb5"
     },
     {
       "path": "bun.lock",
