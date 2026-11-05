@@ -1,0 +1,144 @@
+{
+  "utc": "2026-11-05T04:12:05.509Z",
+  "actor": "Codex",
+  "repo": "pagelove/racing-template",
+  "scope": "Candidate source closure; audit files excluded to avoid recursive receipts",
+  "status": "Implementation candidate; live gates listed in REVIEW.md",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 19,
+      "sha256": "d60f352d0db1404c70afb4bb8b2ca3fd1c610572aa40720e8a0b7baa7885418c"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 42,
+      "sha256": "e3f22027c31cf9c8bc9e6945020db55876c86baf60d9cad2164beec5b381deb1"
+    },
+    {
+      "path": "AGENTS.md",
+      "bytes": 552,
+      "sha256": "febde961c8698bc958c59ed60da069eb1cf18cb9a6f85018a3ecb31ca074111a"
+    },
+    {
+      "path": "ASSETS.md",
+      "bytes": 342,
+      "sha256": "4ba1a10c29eb2da6da5094c43ff08c11bc892f5da6516c510901195683226dfa"
+    },
+    {
+      "path": "DESIGN.md",
+      "bytes": 377,
+      "sha256": "7408a37c801bd6cc912cfb3bcb5f545ca0515cd36e9a7189655323db594041cc"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1203,
+      "sha256": "25768f0f5a730893110ab62e341ecb3f1b7171251a8695027c28bcb8c6223ff1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 994,
+      "sha256": "e7698b2386c9bf9f0dcf4f8f298e37c5ea5660e3e82941470b55f5e53973da30"
+    },
+    {
+      "path": "REVIEW.md",
+      "bytes": 1287,
+      "sha256": "281fcf4a19f5c425e04dc37f7380d3fa6288ebf62b0cea55a573c9f5620ac7bc"
+    },
+    {
+      "path": "bun.lock",
+      "bytes": 3177,
+      "sha256": "aced76921cebf71e9340f07668e2d227761f42ef90630fca53c1cae3aa691aef"
+    },
+    {
+      "path": "docs/architecture.md",
+      "bytes": 1248,
+      "sha256": "3a5f2e1f822efad2e2621bf906cd0e6a44c69a190a5fb60b98ff37af11f9d51a"
+    },
+    {
+      "path": "docs/deployment.md",
+      "bytes": 291,
+      "sha256": "d1fcf7ebda59acbc8d6c9517a4d5b19351965d595c35537ada9895b1b2051f62"
+    },
+    {
+      "path": "docs/personalization.md",
+      "bytes": 206,
+      "sha256": "d478cceab1b6b5e7df32a04ff141ab5e4d23204e652054cb8e9f9ff79a028aca"
+    },
+    {
+      "path": "package.json",
+      "bytes": 363,
+      "sha256": "2d58a3917348b98be7664c094ecfe16d91532ddfb076353fe09c2d94425e581a"
+    },
+    {
+      "path": "pagelove.html",
+      "bytes": 296,
+      "sha256": "bbc54a06f69036432d11447c5a36d9cbf00ae0a905150e7dcb13e72939915df4"
+    },
+    {
+      "path": "scripts/preview.mjs",
+      "bytes": 793,
+      "sha256": "c2f8bd420f40a4747a689bb0c400bc905ff75ac3e8699616e4f3aed5cd45c530"
+    },
+    {
+      "path": "site/app.mjs",
+      "bytes": 5836,
+      "sha256": "9b085c23f81277ed4395ebd9a3dc26d0d9a2ef104a4bf4713127726e62e23b68"
+    },
+    {
+      "path": "site/assets/pagelove-design/LICENSE",
+      "bytes": 1203,
+      "sha256": "25768f0f5a730893110ab62e341ecb3f1b7171251a8695027c28bcb8c6223ff1"
+    },
+    {
+      "path": "site/assets/pagelove-design/app.css",
+      "bytes": 3403,
+      "sha256": "989013780ce09e560902b9bbb0035730d77901a871159d340a5b83f7fca9bee7"
+    },
+    {
+      "path": "site/assets/pagelove-design/foundations.css",
+      "bytes": 8000,
+      "sha256": "68ada0487fbfe85f40a136e48b8bfb9424c7bd6eb3230438268bbcabf95fa86f"
+    },
+    {
+      "path": "site/assets/pagelove-design/library-components.css",
+      "bytes": 42710,
+      "sha256": "7acd3bc452b690e288145c8eb885379237e2401f04542a8b3e7f76cee46f133b"
+    },
+    {
+      "path": "site/assets/pagelove-design/profiles.css",
+      "bytes": 1527,
+      "sha256": "e33fc8cffe8b30dbf458f43746febbc3978cbfdac8e425d8896e3bc199596ea0"
+    },
+    {
+      "path": "site/assets/pagelove-design/semantic.css",
+      "bytes": 12277,
+      "sha256": "ef39a8bb9c014d7fb09744d2b591a3c42cded295917acc17458df9e13167c2cd"
+    },
+    {
+      "path": "site/assets/pagelove-design/typography.css",
+      "bytes": 5852,
+      "sha256": "28869ab24e5f32b7c1b782679d5ba2f46c20a8eb7248fb99c10fb7a449e749bf"
+    },
+    {
+      "path": "site/index.html",
+      "bytes": 3924,
+      "sha256": "bc7958aa9ee1727dda0920908521b30c05d4e6d4877bfedd7211e5c4691ba350"
+    },
+    {
+      "path": "site/race.mjs",
+      "bytes": 2101,
+      "sha256": "11197bdbe550edfc2bf2bc2cf10377ace3b7f4b21937ac1c50e1bd0eb669d16d"
+    },
+    {
+      "path": "site/styles.css",
+      "bytes": 1560,
+      "sha256": "4bc79e91ba4ded2a1f0cf9f4713766a7bbf8b5a8d29339e47965f5d018fd4ac9"
+    },
+    {
+      "path": "tests/race.test.mjs",
+      "bytes": 2489,
+      "sha256": "74d9a35bfbb1f66bd9c711261a7783bc5b6d24b22d53ad858fa12a9ea0e30491"
+    }
+  ]
+}

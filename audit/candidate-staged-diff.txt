@@ -1,0 +1,32 @@
+ .gitattributes                                     |   1 +
+ .gitignore                                         |   4 +
+ AGENTS.md                                          |   3 +
+ ASSETS.md                                          |   3 +
+ DESIGN.md                                          |   3 +
+ LICENSE                                            |  24 +++
+ README.md                                          |  11 +
+ REVIEW.md                                          |  13 ++
+ audit/CHANGELOG.md                                 |  23 ++
+ audit/candidate-staged-diff.txt                    |  32 +++
+ audit/screenshots/restored-checkpoint.jpg          | Bin 0 -> 53222 bytes
+ audit/source-sha256.json                           | 144 +++++++++++++
+ bun.lock                                           |  43 ++++
+ docs/architecture.md                               |   9 +
+ docs/deployment.md                                 |   3 +
+ docs/personalization.md                            |   3 +
+ package.json                                       |  18 ++
+ pagelove.html                                      |   1 +
+ scripts/preview.mjs                                |   1 +
+ site/app.mjs                                       |  26 +++
+ site/assets/pagelove-design/LICENSE                |  24 +++
+ site/assets/pagelove-design/app.css                |  55 +++++
+ site/assets/pagelove-design/foundations.css        | 236 +++++++++++++++++++++
+ site/assets/pagelove-design/library-components.css |   2 +
+ site/assets/pagelove-design/profiles.css           |  35 +++
+ site/assets/pagelove-design/semantic.css           | 225 ++++++++++++++++++++
+ site/assets/pagelove-design/typography.css         | 183 ++++++++++++++++
+ site/index.html                                    |   1 +
+ site/race.mjs                                      |  14 ++
+ site/styles.css                                    |   2 +
+ tests/race.test.mjs                                |  10 +
+ 31 files changed, 1152 insertions(+)
