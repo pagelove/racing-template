@@ -21,3 +21,7 @@ The disposable review copy contains only fictional data and is publicly accessib
 Live Courtyard two-lap driving journey passed at22.8s. Personal progress is device-local; no shared result authority is claimed.
 
 Pagelove native authentication has not been shown to fail. A401 on an application route with no matching write grant is not evidence that a separate identity system is required. Owner WebDAV authoring is already authenticated; browser actor/session integration and exact per-app read/write rules remain to be established before enabling protected functions. Public reading and local game play need no account by themselves.
+
+## Prompt-driven deployment acceptance — November 5, 2026
+
+PASS: repository check, full tests and prepared-site credential scan; eleven additional deployment checks cover exact host/path scoping, seed/unrelated-file preservation, explicit conditional updates, stale412 without retry, weak-ETag refusal, read-only verification and no token in public requests/receipts. Trusted owner installation and owner/public entry readback passed on the authorized disposable host under /prompt-e2e-20261105/racing-template/. The shared deploy implementation also passed a live edited-record retention, stale-write rejection and conditional restore test. This completes the selected-repo plus supplied-host/API-token deployment mechanism independently of console-session reuse. Native private browser editing, real private publication and physical-device/assistive acceptance retain their separately stated limits.
