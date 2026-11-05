@@ -1,7 +1,9 @@
 import fs from 'node:fs/promises';
 import readline from 'node:readline';
 import {fileURLToPath} from 'node:url';
-import {connection, readSite, deploy} from './deploy-lib.mjs';
+import {connection, readSite} from './deploy-lib.mjs';
+import {configureTarget,authenticate,deployGame,verifyGame} from '../tools/deploy-pagelove.mjs';
+import {execFileSync} from 'node:child_process';
 
 async function main() {
   const args = process.argv.slice(2);
@@ -11,6 +13,7 @@ async function main() {
     if (['--host', '--path'].includes(args[i]) && (!args[++i] || args[i].startsWith('--'))) throw Error('Missing argument value.');
   }
   const value = key => args[args.indexOf(key) + 1];
+  if(args.includes('--prepare'))execFileSync(process.execPath,[fileURLToPath(new URL('../tools/build.mjs',import.meta.url))],{stdio:'inherit'});
   const files = await readSite(fileURLToPath(new URL('../site/', import.meta.url)));
   if (args.includes('--prepare')) { console.log('Prepared ' + files.length + ' credential-free installation files in site/.'); return; }
   if (!args.includes('--host')) throw Error('Specify --host with the public site hostname.');
@@ -25,10 +28,12 @@ async function main() {
     try { token = (await input[Symbol.asyncIterator]().next()).value; }
     finally { input.close(); process.stdin.setRawMode(false); process.stdin.pause(); }
   }
-  const receipt = await deploy({host, prefix, files, token, update: args.includes('--update'), verifyOnly: args.includes('--verify')});
+  configureTarget(host,prefix,args.includes('--update'));
+  await authenticate(token);
+  const receipt = args.includes('--verify') ? await verifyGame() : await deployGame();
   await fs.mkdir(new URL('../.local/', import.meta.url), {recursive: true});
   await fs.writeFile(new URL('../.local/deployment-receipt.json', import.meta.url), JSON.stringify(receipt, null, 2));
   console.log('Verified ' + receipt.files.length + ' installed files: ' + receipt.url);
-  console.log('Sanitized receipt: .local/deployment-receipt.json. Existing records preserved; browser application saving is a separate capability.');
+  console.log('Sanitized receipt: .local/deployment-receipt.json. Local progress and Workshop records preserved; shared services remain disconnected.');
 }
 main().catch(error => { console.error(error.message); process.exitCode = 1; });

@@ -1,22 +1,27 @@
 {
   "name": "@pagelove/racing-template",
-  "version": "0.1.0",
-  "type": "module",
+  "version": "0.2.0",
   "private": true,
-  "license": "MIT",
+  "type": "module",
+  "license": "UNLICENSED",
   "scripts": {
+    "build": "node tools/build.mjs",
+    "prepare": "node tools/build.mjs",
+    "check": "node tools/build.mjs && node --test tests/*.test.mjs",
     "test": "node --test tests/*.test.mjs",
-    "preview": "node scripts/preview.mjs",
-    "check": "node --check site/app.mjs",
+    "preview": "node tools/serve.mjs",
     "deploy": "node scripts/deploy.mjs",
     "verify": "node scripts/deploy.mjs --verify",
-    "test:deployment": "node --test tests/deployment.test.mjs",
-    "prepare": "node scripts/deploy.mjs --prepare"
+    "test:deployment": "node --test tests/deployment.test.mjs tests/publication-html.test.mjs"
   },
   "engines": {
     "node": ">=22"
   },
+  "dependencies": {
+    "three": "0.180.0"
+  },
   "devDependencies": {
     "linkedom": "0.18.12"
-  }
+  },
+  "packageManager": "bun@1.4.3"
 }

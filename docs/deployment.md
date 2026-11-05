@@ -1,27 +1,13 @@
-# Prompt-driven build and deployment
+# Build and deploy Racing
 
-Slide 4 supplies the selected repository URL, public site hostname and private API token to the user's coding AI. The AI reads this repository's instructions, adapts the actual app, runs its checks, prepares site/ and deploys that directory using trusted owner WebDAV authoring. This flow does not require a console-to-app browser session handoff. No outside identity provider is used.
+This template is the Scrap League adaptation. Use Node22+ and pinned Bun dependencies. Run bun install --ignore-scripts, node scripts/deploy.mjs --prepare (validates HTML content and rebuilds site/), then node --test tests/*.test.mjs. The source build never runs author-content utilities. Preview with node tools/serve.mjs at http://127.0.0.1:4391/ (PORT can select a fresh origin to avoid an older installed worker).
 
-## Commands
+Slide4 supplies this repo, the public site hostname and a private API token. Run node scripts/deploy.mjs --host YOUR-SITE.onpagelove.com; paste the token at the echo-disabled terminal prompt or provision PAGELOVE_API_TOKEN privately. Never put it in command arguments, source, browser JS, URLs or logs. Site provisioning belongs to Pagelove, not this publisher.
 
-Use Node22 or newer. Install pinned development dependencies with npm install or bun install --ignore-scripts. Run the repository's check and test commands, plus node --test tests/deployment.test.mjs. For Mahjong, run node tools/prepare-template.mjs after changing game source; other apps already author their runtime under site/.
+Use --path /isolated-directory/ for a separate installation on an authorized test site. Use --verify for read-only remote verification and --update only after reviewing existing differing game code. The target is validated as an exact native public/DAV hostname pair; redirects are refused. No fixed upstream host is contacted. Only the configured owner authoring origin receives the credential.
 
-1. node scripts/deploy.mjs --prepare — validate the prepared installation closure and scan for credentials. This does not create a site or upload anything.
-2. node scripts/deploy.mjs --host YOUR-SITE.onpagelove.com — paste the account API token at the private terminal prompt. Terminal echo is disabled. An automation may instead receive PAGELOVE_API_TOKEN through its private credential mechanism; never put a real token in shell command text, a prompt transcript committed to Git, browser code, URLs or logs.
-3. node scripts/deploy.mjs --host YOUR-SITE.onpagelove.com --verify — read-only owner/public verification of the prepared release.
+The release publisher inventories the target, retains private ignored baseline backups, uses create-only writes for missing files and ETag conditions for existing files, refuses different immutable assets and rechecks revision before a write. Lost write responses are reconciled by readback rather than blindly repeated. Immutable dependencies and authored source are staged and publicly verified before index promotion. The served root HTML may be serialized and receive Pagelove branding; only the exact known footer/semantic identity is accepted. Its actual bytes are then pinned in the hosted offline inventory and worker, followed by public readback. This is sequential promotion, not a multi-file atomic transaction.
 
-Use --path /isolated-directory/ for a separate install on an existing authorized test site. Root / is the default for the user's own selected site. The tool only accepts an exact native onpagelove.com hostname and its corresponding dav- hostname; custom domains need an explicitly reviewed adaptation. Network redirects are refused. Site creation and connection provisioning are handled by Pagelove, before this command.
+Only the current immutable release plus official content are uploaded. Existing Workshop tracks/catalogs, scores/boards, unrelated resources and old hosted releases are preserved. Do not treat an official source release as a Workshop edit. Source and operational rules are in docs/installation-contract.md and ARCHITECTURE.md. A sanitized receipt is saved at ignored .local/deployment-receipt.json; private backups under .local/deployment-baselines/ are never committed.
 
-## Preservation and updates
-
-The tool inventories the destination and preflights the complete payload before writing. Fresh files and records use If-None-Match: *. Existing records/, data/, submissions/ and scores/ resources are retained, including owner edits; unrelated files are never deleted. Existing different code is refused unless you inspect it and deliberately pass --update. Code updates require a strong ETag and If-Match; stale412 and network ambiguity stop without automatic retry. Assets are uploaded before index.html. Publication across several files is not one atomic transaction; retain old immutable assets when designing release changes.
-
-Every installed file is read back through owner authoring. HTML is compared by parsed structure to accommodate platform serialization; other payloads are byte-compared. The public entry is also checked, ignoring only the known platform branding footer. Existing mutable records are verified against the destination baseline, not reset to template seeds. The sanitized receipt is stored in ignored .local/deployment-receipt.json. It contains paths/hashes/results, never the token. It is verification evidence, not a backup. Back up real records privately before a migration and verify restoration separately.
-
-## What this establishes
-
-A successful run establishes build-payload installation and readback on the selected site. Browser review still checks actual user journeys and network assets. The supplied token stays in the coding AI's private authoring process; the published app never receives it.
-
-Browser-based private record editing, protected drafts and booking administration remain separate supported-authentication/authorization integrations. Do not add a fake signed-in flag or embed the owner token to enable them. Use fictional review data until the target's protected read/write paths are accepted. Games retain device-local progress as documented. A deployment succeeds independently of these optional runtime integrations; it does not claim they passed.
-
-Official references: https://docs.pagelove.com/ and https://docs.pagelove.com/reference/reading-and-writing/ . Follow docs/architecture.md (where present), REVIEW.md and the document-first guide for the actual app's authority and limitations.
+Deployment is trusted owner WebDAV authoring, independent of console-to-app browser sessions. Garage, progress, bests, ghosts and Workshop drafts work locally. Shared online boards and remote Workshop publishing remain separate, disconnected capabilities. No server-side validation, private authorization or competitive-score proof is inferred from an upload.

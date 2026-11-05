@@ -1,27 +1,11 @@
-# Racing candidate acceptance
+# Racing replacement acceptance
 
-UTC: 2026-11-05T04:06:29.190Z; actor Codex. Node24.19.0, in-app Chromium at default desktop size and390px CSS iframe.
+Source: Scrap League b777c24e317f27d4347d379863717531195ea9f8, adapted into Racing0.2.0. This replaces the Roundabout0.1 template; earlier Roundabout evidence remains in Git/audit history and is not evidence for the new engine.
 
-- PASS: six tests: HTML definitions, finite acceleration/steering/braking, ordered checkpoints, immutable finished results, continuous-input Courtyard completion and complete bounded-input runs on every track without injecting positions.
-- PASS: browser actual pointer accelerator plus keyboard steering completed Courtyard2 laps; result20.2s displayed and local personal best saved. Restart, pause/resume and track selection worked. Steering was revised to speed-proportional turning after an unsuccessful early attempt; Orchard radius refined after the first simulated controller could not complete it.
-- CHECKED:390px iframe fit with visible labeled controls. Not a physical-phone measurement.
-- PENDING: physical-phone multi-touch, screen-reader equivalent, max-duration performance review.
-- No remote persistence, shared score, anti-cheat, audio or multiplayer. Local device times are unverified personal results. Rules race-2 rejects old race-1 checkpoints.
+PASS: current source build and 40 tests, including 36 complete simulated six-car races on 12 circuits/3 difficulties, 12 independent legal-control track laps, 81-build acceleration/braking, HTML round trips/import rejection, geometry/gates/timing/pause, campaign/daily contracts, deployment conditions, per-install namespace/offline inventory and minimum mobile-control tests. Headless races use legal input controllers and are not human completions.
 
-Prepared source candidate; no live-host release claim.
+PASS: fresh-origin browser keyboard driving reached94km/h in an edited Workshop test; League started with6 cars, Garage preset save/load worked, Workshop rename/Gravel painting/undo/redo and reload draft recovery worked, and local full offline pack installed. Some initial localhost4391 observations came from an older preexisting worker and are excluded; acceptance uses4437 and the new live namespace. First pause comparison sampled before clicking Pause versus after it, so that small timing difference is not a paused-clock failure; a correctly sampled paused-state check follows in browser evidence.
 
-PASS: checkpoint browser recovery retained1.1s across a full reload and restored paused. No remote write involved.
+PASS: final release sl-cb96a083d0cef1 deployed to the isolated namespace and both existing Racing review URLs, each with 57 staged-resource readbacks and a separate 26-file verification. Local server-off offline reload restored the Workshop draft and launched a test drive. Correct post-pause clock samples remained identical. Actual CSS iframe viewports of 390×844 and 844×390 had no horizontal overflow and all race button targets measured at least 44×44 pixels. These are layout checks, not physical-phone certification. Slide 4 uses an actual screenshot of this game and the prompt describes the adopted repository's features.
 
-## Live fictional review
-
-[Open this app preview](https://camel-boom-0460.onpagelove.com/template-review-20261105/racing-template/index.html) · [All app previews](https://camel-boom-0460.onpagelove.com/).
-
-The disposable review copy contains only fictional data and is publicly accessible. Source files were staged create-only, then verified through both owner WebDAV and public reads. Browser tasks loaded the deployed app. A390×844 browser viewport was checked; this is emulation, not physical-phone acceptance.
-
-Live Courtyard two-lap driving journey passed at22.8s. Personal progress is device-local; no shared result authority is claimed.
-
-Pagelove native authentication has not been shown to fail. A401 on an application route with no matching write grant is not evidence that a separate identity system is required. Owner WebDAV authoring is already authenticated; browser actor/session integration and exact per-app read/write rules remain to be established before enabling protected functions. Public reading and local game play need no account by themselves.
-
-## Prompt-driven deployment acceptance — November 5, 2026
-
-PASS: repository check, full tests and prepared-site credential scan; eleven additional deployment checks cover exact host/path scoping, seed/unrelated-file preservation, explicit conditional updates, stale412 without retry, weak-ETag refusal, read-only verification and no token in public requests/receipts. Trusted owner installation and owner/public entry readback passed on the authorized disposable host under /prompt-e2e-20261105/racing-template/. The shared deploy implementation also passed a live edited-record retention, stale-write rejection and conditional restore test. This completes the selected-repo plus supplied-host/API-token deployment mechanism independently of console-session reuse. Native private browser editing, real private publication and physical-device/assistive acceptance retain their separately stated limits.
+Shared online boards and remote Workshop publishing remain disconnected as in upstream. Real physical-phone/gamepad, screen-reader and long-session balance/performance certification are not claimed. No original Scrap League site or source repository was changed.

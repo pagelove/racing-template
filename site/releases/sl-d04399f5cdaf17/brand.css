@@ -1,0 +1,15 @@
+@import './vendor/pagelove-design/foundations.css';
+@import './vendor/pagelove-design/semantic.css';
+@import './vendor/pagelove-design/typography.css';
+
+/* Keep the game art while applying Pagelove's dark semantic roles to controls. */
+button,input,select,textarea{font-family:var(--font-family-secondary,Arial,sans-serif)}
+button{border-color:var(--border-regular);border-radius:100px;background:var(--background-surface-regular);color:var(--text-strong);min-height:44px}
+button:hover{background:var(--background-surface-hovered,var(--background-surface-light))}
+button.primary{background:var(--button-strong-default);color:var(--button-strong-text);border-color:transparent}
+button.primary:hover{background:var(--button-strong-hovered)}
+button.quiet,.wordmark,#header nav button{background:transparent;border-color:transparent}
+:focus-visible{outline:3px solid var(--border-focused);outline-offset:3px}
+input,select,textarea{border-color:var(--border-regular);color:var(--text-strong);background:var(--background-surface-regular);border-radius:8px}
+.track-card,.hud-main,.result-sheet,.home-bottom,.part-slot,.workshop-bar,.workshop-status,.palette,.inspector,.result-stats,.ranking td{border-color:var(--border-regular)}
+.track-card,.palette button{border-radius:12px}
