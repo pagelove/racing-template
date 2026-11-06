@@ -1,0 +1,47 @@
+{
+  "utc": "2026-11-06T02:46:02.967Z",
+  "actor": "Codex",
+  "guideEdition": "2.4",
+  "sourceBase": "7588596f9e631693c28b8c137e52dff9102b98c3",
+  "checks": [
+    {
+      "name": "check",
+      "code": 0
+    },
+    {
+      "name": "test",
+      "code": 0
+    },
+    {
+      "name": "prepare",
+      "code": 0
+    }
+  ],
+  "browser": "No new visual behavior; prior browser evidence remains historical. Current local source/engine checks recorded separately.",
+  "limits": [
+    "No new live private data or host policy acceptance claimed.",
+    "Physical device and assistive-technology checks remain separate."
+  ],
+  "files": [
+    {
+      "file": "DOCUMENT-FIRST-REVIEW.md",
+      "sha256": "396c829cc19e1300fb9e6340d5645dfe53f59e2877a0b7900f762d1a05496844",
+      "bytes": 3246
+    },
+    {
+      "file": "AGENTS.md",
+      "sha256": "a5f97f3c6bca7ad9b4bbaca1a2cefee49bff0ae405f846f7c9758bc392551e72",
+      "bytes": 1113
+    },
+    {
+      "file": "README.md",
+      "sha256": "467f9660e1582119a3e96afb05d58915323eba6dd82caabc24b0305cf076f480",
+      "bytes": 1775
+    },
+    {
+      "file": "site/release.json",
+      "sha256": "61f2d03e41f8e9acade5b5d6f5d8b0da98f6b1bfffaac5dd6b272a835d0a6aa0",
+      "bytes": 3819
+    }
+  ]
+}

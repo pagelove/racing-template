@@ -1,0 +1,35 @@
+diff --git a/AGENTS.md b/AGENTS.md
+index 6e5dbf7..28db491 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -1,3 +1,6 @@
+ # Application instructions
+ 
+ Read docs/architecture.md and DESIGN.md before changes. Apply Document-first Development edition 2.4 and W1–W8; HTML/DOM is the domain authority. Preserve private records on deployment. Record plans and changes with UTC, actor, rationale, affected files, hashes and verification in audit/CHANGELOG.md. Never commit credentials. Do not claim fixture checks establish live permissions. Use neutral panels, semantic brand tokens and no decorative northeast arrows. Run npm run check and npm test plus affected browser tasks.
++
++## Document-first maintenance
++Read DOCUMENT-FIRST-REVIEW.md before changing domain information or persistence. Apply edition2.4 W1–W8/R01–R12 proportionately. Preserve semantic HTML/DOM authorship, stable identities and source records, or retain a concrete justified runtime exception. Every meaningful batch needs a plan/result with UTC, actor, affected files, rationale, hashes and actual verification in audit/CHANGELOG.md. Keep unverified provider/private/device checks explicit. Do not add external services or broaden approved game trust boundaries.
+diff --git a/README.md b/README.md
+index 36fe723..8580e4c 100644
+--- a/README.md
++++ b/README.md
+@@ -7,3 +7,7 @@ Install with bun install --ignore-scripts (or npm install), run node tools/build
+ Slide4 combines this repo, the user's site hostname and private API token. Run node scripts/deploy.mjs --prepare, then node scripts/deploy.mjs --host YOUR-SITE.onpagelove.com. Enter the token privately. Use --path /isolated-directory/ for a separate test install and --verify for read-only verification. Existing differing entry code requires deliberate --update. See docs/deployment.md for exact semantics. No separate account/auth service is needed for owner deployment.
+ 
+ Gameplay, garage and Workshop drafts save on this browser. Shared boards and remote Workshop publishing are disconnected. No owner token is embedded. Old Roundabout progress is left untouched; it is not imported as a Scrap League result.
++
++## Document-first development review
++
++Read [the edition2.4 project record](DOCUMENT-FIRST-REVIEW.md) for source authority, operation/recovery contracts, justified runtime exceptions and current acceptance limits. Plans and verification are recorded in audit/CHANGELOG.md. Local tests do not establish live privacy, authorization or physical-device acceptance.
+diff --git a/site/release.json b/site/release.json
+index 67ba68d..a41a7dc 100644
+--- a/site/release.json
++++ b/site/release.json
+@@ -1,6 +1,6 @@
+ {
+   "release": "sl-cb96a083d0cef1",
+-  "createdAt": "2026-11-05T19:39:57.319Z",
++  "createdAt": "2026-11-06T02:22:36.873Z",
+   "files": [
+     {
+       "url": "./",

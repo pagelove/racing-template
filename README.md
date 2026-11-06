@@ -7,3 +7,7 @@ Install with bun install --ignore-scripts (or npm install), run node tools/build
 Slide4 combines this repo, the user's site hostname and private API token. Run node scripts/deploy.mjs --prepare, then node scripts/deploy.mjs --host YOUR-SITE.onpagelove.com. Enter the token privately. Use --path /isolated-directory/ for a separate test install and --verify for read-only verification. Existing differing entry code requires deliberate --update. See docs/deployment.md for exact semantics. No separate account/auth service is needed for owner deployment.
 
 Gameplay, garage and Workshop drafts save on this browser. Shared boards and remote Workshop publishing are disconnected. No owner token is embedded. Old Roundabout progress is left untouched; it is not imported as a Scrap League result.
+
+## Document-first development review
+
+Read [the edition2.4 project record](DOCUMENT-FIRST-REVIEW.md) for source authority, operation/recovery contracts, justified runtime exceptions and current acceptance limits. Plans and verification are recorded in audit/CHANGELOG.md. Local tests do not establish live privacy, authorization or physical-device acceptance.
