@@ -1,3 +1,4 @@
+import{mountCollectionFinder}from'./collection-finder.mjs';
 import {installationURL} from './install.js';
 import {World} from './renderer.js';import {Sound} from './audio.js';import {Workshop} from './workshop.js';
 import {uid,clone,esc,hash,gameplay,wrap,clamp,duplicateTrack} from './model.js';import {compile,nearest,atDistance} from './track.js';import {STARTER,SLOTS,assemble,unlocked,comparisonKey,time,standings} from './builds.js';import {openStore,freshProgress} from './storage.js';import {DT,createCar,stepRace,classification,resultOf,resetCar} from './simulation.js';
@@ -49,3 +50,5 @@ init();
 
 
 
+
+mountCollectionFinder({root:'#event-list',card:'.track-card',group:'.track-grid',label:'Find a circuit',allowAvailable:true,status:card=>({completed:card.textContent.includes('COMPLETED'),available:!card.disabled})});

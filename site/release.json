@@ -1,103 +1,107 @@
 {
-  "release": "sl-cb96a083d0cef1",
-  "createdAt": "2026-11-06T02:22:36.873Z",
+  "release": "sl-bf33541257072a",
+  "createdAt": "2026-11-06T13:02:59.294Z",
   "files": [
     {
       "url": "./",
-      "hash": "98de57f649cba315fb75b3b96ef8a3dc9053ea7c6f6caa140c6772cf98d8aa44"
+      "hash": "db9b3bd81edd82e72a7efef957578a0087526fdc7b2ec21b1d8536369ab83d25"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/audio.js",
+      "url": "./releases/sl-bf33541257072a/audio.js",
       "hash": "45c558a9ccdd5a8a9f1ee4ecc5de95046c9ff20b7334ca47f0c8d4fc695b88c6"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/brand.css",
-      "hash": "b255c47d9ecdf00281d1a874698f615a38e3a96b8c8276e64c26abf762e18de5"
+      "url": "./releases/sl-bf33541257072a/brand.css",
+      "hash": "e477050cf81a9eee87def3cc01638b96ec8e3edbf6a970acec1e286f7da98fb8"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/builds.js",
+      "url": "./releases/sl-bf33541257072a/builds.js",
       "hash": "d3c9306a127ed590a2728d77b4729b8bdb1998cd13adff0087830edefa0ffefd"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/icon.svg",
+      "url": "./releases/sl-bf33541257072a/collection-finder.mjs",
+      "hash": "20739c6168f197ce957b8b45a6ee52ca31a5f704626df73dd17c813cf8a648ec"
+    },
+    {
+      "url": "./releases/sl-bf33541257072a/icon.svg",
       "hash": "4af57629c5024405bf2d48d09c5cd07ae1be480dc61066fc6fc470bebf2f45ff"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/install.js",
+      "url": "./releases/sl-bf33541257072a/install.js",
       "hash": "43e9fcc0c23c110f0c029e768e7a836166e99e9a69457f7d84a102493ef14031"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/main.js",
-      "hash": "fdd86ede5aa726a4d83e7232228908e0eea56bdb5ffeec87f2cf8c928da4a480"
+      "url": "./releases/sl-bf33541257072a/main.js",
+      "hash": "f8b8ce2564f2da4641c7f103bd8b74fd1f7ec6fc5c94b96c9272a8c9e9af0ebb"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/model.js",
+      "url": "./releases/sl-bf33541257072a/model.js",
       "hash": "3168bad66939c8208c59f6b9a58bfb5d030e37b772a7ec58b4b97ebfe99608fd"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/pagelove.js",
+      "url": "./releases/sl-bf33541257072a/pagelove.js",
       "hash": "df6375bffc2982b4cb53561b46c4555b909a84808776eef5be95bad567e585ed"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/renderer.js",
+      "url": "./releases/sl-bf33541257072a/renderer.js",
       "hash": "9ea8f16a4770767b93f0a52897ef3fded340f3b86f0a0db8c1f85bc3c06c1d21"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/simulation.js",
+      "url": "./releases/sl-bf33541257072a/simulation.js",
       "hash": "ccaa412575b2a10fa5a9a0e3cdb1c550f8ec7215578bef9217a3e9b4ba5e5f77"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/storage.js",
+      "url": "./releases/sl-bf33541257072a/storage.js",
       "hash": "9447ea453d60f8ddde9def1ce81dc889231c45c66a1efb8ced18180a79ea483d"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/style.css",
+      "url": "./releases/sl-bf33541257072a/style.css",
       "hash": "6369c3c03494e15a6ac884d675934889c09994104884d4cb86dc258347a12122"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/track.js",
+      "url": "./releases/sl-bf33541257072a/track.js",
       "hash": "d0fa32697b9fe9b347d6e253b439751903152858ae43fd29e9b1b5ab277ab431"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/workshop.js",
+      "url": "./releases/sl-bf33541257072a/workshop.js",
       "hash": "aab6d2dc3753a92ce2ad00d5a6b89ea0c17faf732501e2447bc16bb5bfca5c8d"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/content.json",
+      "url": "./releases/sl-bf33541257072a/content.json",
       "hash": "6ae83978fced9398db1df776563467762e6d9085bfcd24b9efd65d8bab5a155c"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/vendor/pagelove-design/foundations.css",
+      "url": "./releases/sl-bf33541257072a/vendor/pagelove-design/foundations.css",
       "hash": "68ada0487fbfe85f40a136e48b8bfb9424c7bd6eb3230438268bbcabf95fa86f"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/vendor/pagelove-design/semantic.css",
+      "url": "./releases/sl-bf33541257072a/vendor/pagelove-design/semantic.css",
       "hash": "ef39a8bb9c014d7fb09744d2b591a3c42cded295917acc17458df9e13167c2cd"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/vendor/pagelove-design/typography.css",
+      "url": "./releases/sl-bf33541257072a/vendor/pagelove-design/typography.css",
       "hash": "28869ab24e5f32b7c1b782679d5ba2f46c20a8eb7248fb99c10fb7a449e749bf"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/vendor/pagelove-design/LICENSE",
+      "url": "./releases/sl-bf33541257072a/vendor/pagelove-design/LICENSE",
       "hash": "25768f0f5a730893110ab62e341ecb3f1b7171251a8695027c28bcb8c6223ff1"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/vendor/three.module.js",
+      "url": "./releases/sl-bf33541257072a/vendor/three.module.js",
       "hash": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/vendor/three.core.js",
+      "url": "./releases/sl-bf33541257072a/vendor/three.core.js",
       "hash": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/vendor/THREE-LICENSE.txt",
+      "url": "./releases/sl-bf33541257072a/vendor/THREE-LICENSE.txt",
       "hash": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
     },
     {
-      "url": "./releases/sl-cb96a083d0cef1/manifest.webmanifest",
+      "url": "./releases/sl-bf33541257072a/manifest.webmanifest",
       "hash": "4e2bbeac2d6c9b542d221e5df6bec0e1e8d2d3edd4b0b49da3afbbeaefb68a04"
     }
   ],
-  "bytes": 2317107
+  "bytes": 2321118
 }
